@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <p id="abc"></p>
+    <script>
+        var abcd = {
+            "name": "Viraj",
+            "age": 15,
+            "subjects": ["Hindi", "English", "Maths"],
+            "grade": 10
+        };
+        var defg = JSON.stringify(abcd);
+        var mnb = JSON.parse(defg);
+        document.getElementById("abc").innerHTML = "Hi! My name is "+mnb.name + " " + "I am " + mnb.age + "Years old. My Favourite subject is " + mnb.subjects[2] + " and I study in Class" + mnb.grade;
+    </script>
+</body>
+</html>
