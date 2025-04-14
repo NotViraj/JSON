@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Callback Functions</h1>
+    <p id="abc"></p>
+    <script>
+        function abcd(mnop) {
+            document.getElementById("abc").innerHTML = mnop ;
+        }
+        function abcd1(a,b,myCallback) {
+            let ans = a + b;
+            myCallback(ans);
+        }
+        abcd1(5, 10, abcd);
+    </script>
+</body>
+</html>
